@@ -20,12 +20,12 @@ Dashboard will be automatically loaded using a helper container that will run ag
 
 ### TODO
 
-* [] Create InfluxDB dashboard, export JSON
-* [] Create helper container to load JSON dashboard and other items using IDB API
-* [] API Keys for IDB should be at customer level, not neutrino
-* [] New customer workflow needs to create IDB API key and IDB bucket, remove API Key process from neutrinos - OR - keep the concept of customer key vs default key, so data is never lost if not connected via customer key
-* [] InfluxDB should monitor the Neutrinos and Containers running on them using Telegraf
-* [] Keep in mind that you should be able to run Neutron anywhere, not just in a SaaS manner (off-grid on Shiraz's RV for example)
+* [ ] Create InfluxDB dashboard, export JSON
+* [ ] Create helper container to load JSON dashboard and other items using IDB API
+* [ ] API Keys for IDB should be at customer level, not neutrino
+* [ ] New customer workflow needs to create IDB API key and IDB bucket, remove API Key process from neutrinos - OR - keep the concept of customer key vs default key, so data is never lost if not connected via customer key
+* [ ] InfluxDB should monitor the Neutrinos and Containers running on them using Telegraf
+* [ ] Keep in mind that you should be able to run Neutron anywhere, not just in a SaaS manner (off-grid on Shiraz's RV for example)
 
 ### Notes
 
