@@ -4,15 +4,13 @@ Neutron is a distributed air quality testing platform that can be expanded to su
 
 ### Hardware
 
-Initial hardware will be based on a Raspberry Pi with BME680 and a PMS5003 Pariculate Matter sensor. I will need to build a 3D printed case for a handful of these systems to hold the Pi and sensors. The setup will be POE powered and I will need to setup a VPN tunnel to connect to it from my laptop from anywhere. 
-
-The main unit will be a Raspberry Pi as well, but will need to hold the POE switch with it in the Pelican case.
+Initial hardware will be based on a Raspberry Pi with BME680, HM3301, HCHO, and multigas sensors. It will be based on the Grove sensor system to increase the speed and reliability at which the units can be built. I will need to build a 3D printed case for a handful of these systems to hold the Pi and sensors. Each Neutrino will uplink to a central node that includes the sensor equipment and a Cradlepoint LTE modem with Wifi.
 
 ### Software
 
-Main Node (known as Neutron) will run containerized versions of InfluxDB and Grafana, as well as a configuration web interface to configure the various nodes on network. 
+Neutron (VPS on Digital Ocean) will run containerized versions of InfluxDB and Grafana, as well as a configuration web interface to configure the various nodes on network.
 
-Remove Nodes (known as Neutrinos) will run a Python application to scrape data from the sensors and then write them to the database.
+Sensor nodes (known as Neutrinos) will run a Python application to scrape data from the sensors and then write them to the database.
 
 ### Dashboard
 
