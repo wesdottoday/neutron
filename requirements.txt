@@ -1,0 +1,7 @@
+cloudant
+python-dotenv
+flask
+flask_httpauth
+influxdb_client
+jsonify
+shortuuid
